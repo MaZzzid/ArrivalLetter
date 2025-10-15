@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'">
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>এ্যারাইভাল লেটার</title>
+    <link rel="stylesheet" href="./Assets/index.css">
+    <script src="./Assets/index.js" defer></script>
+</head>
+
+<body>
+    <div class="input">
+        <div class="input-wrapper">
+            <div class="input-date">
+                <label for="input-date">তারিখ:</label>
+                <input type="text" id="input-date">
+            </div>
+            <div class="input-name">
+                <label for="input-name">নাম: </label>
+                <select id="input-name">
+                    <option value="মো: নজরুল ইসলাম" data-eng-name="Md. Nazrul Islam" data-pro-name="মো: মাসুদ রানা"
+                        data-has-logo="0" selected>মো: নজরুল ইসলাম</option>
+                    <option value="সাইফুল ইসলাম" data-eng-name="Saiful Islam" data-pro-name="মো: সাইফুল ইসলাম"
+                        data-has-logo="1">সাইফুল
+                        ইসলাম</option>
+                </select>
+            </div>
+
+            <div class="input-authority">
+                <label for="input-authority">ডিলারশীপ: </label>
+                <select id="input-authority">
+                    <option value="বি, সি, আই, সি" selected>বি, সি, আই, সি</option>
+                    <option value="বি, এ, ডি, সি">বি, এ, ডি, সি</option>
+                </select>
+            </div>
+            <div class="input-godown">
+                <label for="input-godown">গুদাম:</label>
+                <select id="input-godown">
+
+                    <optgroup label="কুষ্টিয়া">
+                        <option value="কুষ্টিয়া গুদাম" selected>কুষ্টিয়া গুদাম</option>
+                        <option value="কুষ্টিয়া বাফার">কুষ্টিয়া বাফার</option>
+                        <option value="কুষ্টিয়া বাফার গুদাম">কুষ্টিয়া বাফার গুদাম</option>
+                    </optgroup>
+
+                    <optgroup label="কালিগঞ্জ">
+                        <option value="কালিগঞ্জ গুদাম">কালিগঞ্জ গুদাম</option>
+                        <option value="কালিগঞ্জ বাফার">কালিগঞ্জ বাফার</option>
+                        <option value="কালিগঞ্জ বাফার গুদাম">কালিগঞ্জ বাফার গুদাম</option>
+                    </optgroup>
+
+                    <optgroup label="যশোর">
+                        <option value="যশোর গুদাম">যশোর গুদাম</option>
+                        <option value="যশোর বাফার">যশোর বাফার</option>
+                        <option value="যশোর বাফার গুদাম">যশোর বাফার গুদাম</option>
+                    </optgroup>
+
+                    <optgroup label="নওয়াপাড়া">
+                        <option value="নওয়াপাড়া গুদাম">নওয়াপাড়া গুদাম</option>
+                        <option value="নওয়াপাড়া বাফার">নওয়াপাড়া বাফার</option>
+                        <option value="নওয়াপাড়া বাফার গুদাম">নওয়াপাড়া বাফার গুদাম</option>
+                    </optgroup>
+
+                    <optgroup label="নয়োপাড়া">
+                        <option value="নয়োপাড়া গুদাম">নয়োপাড়া গুদাম</option>
+                        <option value="নয়োপাড়া বাফার">নয়োপাড়া বাফার</option>
+                        <option value="নয়োপাড়া বাফার গুদাম">নয়োপাড়া বাফার গুদাম</option>
+                    </optgroup>
+
+                </select>
+            </div>
+
+            <div class="input-alloctype">
+                <label for="input-alloctype">বরাদ্ধের ধরণ:</label>
+                <select id="input-alloctype">
+                    <option value="">ফাকা রাখুন</option>
+                    <option value="বরাদ্ধকৃত" selected>বরাদ্ধকৃত</option>
+                    <option value="ভর্তুকি">ভর্তুকি</option>
+                </select>
+            </div>
+
+            <div class="input-allocdmonth">
+                <label for="input-allocmonth">বরাদ্ধের মাস:</label>
+                <select id="input-allocmonth">
+                    <option value="জানুয়ারী">জানুয়ারী</option>
+                    <option value="ফেব্রুয়ারী">ফেব্রুয়ারী</option>
+                    <option value="মার্চ">মার্চ</option>
+                    <option value="এপ্রিল">এপ্রিল</option>
+                    <option value="মে">মে</option>
+                    <option value="জুন">জুন</option>
+                    <option value="জুলাই">জুলাই</option>
+                    <option value="আগষ্ট">আগষ্ট</option>
+                    <option value="সেপ্টেম্বর">সেপ্টেম্বর</option>
+                    <option value="অক্টোবর">অক্টোবর</option>
+                    <option value="নভেম্বর">নভেম্বর</option>
+                    <option value="ডিসেম্বর">ডিসেম্বর</option>
+                </select>
+            </div>
+
+            <div class="input-allocdyear">
+                <label for="input-allocyear">বরাদ্ধের বছর:</label>
+                <input type="text" id="input-allocyear">
+            </div>
+
+            <div class="input-arrivedate">
+                <label for="input-arrivedate"> পৌছানোর তারিখ:</label>
+                <input type="text" id="input-arrivedate">
+            </div>
+
+        </div>
+        <div class="input-fertilizer">
+            <table>
+                <tr>
+                    <th>সারের নাম</th>
+                    <th>গ্রহণ করেছি (মে. টন)</th>
+                    <th>মোট বরাদ্ধ</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="input-fertilizer-urea">ইউরিয়া</label>
+                    </td>
+                    <td>
+                        <input type="text" id="input-fertilizer-urea">
+                    </td>
+                    <td>
+                        <input type="text" id="input-fertilizer-urea-total">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="input-fertilizer-tsp">টি.এস.পি</label>
+                    </td>
+                    <td>
+                        <input type="text" id="input-fertilizer-tsp">
+                    </td>
+                    <td>
+                        <input type="text" id="input-fertilizer-tsp-total">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="input-fertilizer-mop">এম.ও.পি</label>
+                    </td>
+                    <td>
+                        <input type="text" id="input-fertilizer-mop">
+                    </td>
+                    <td>
+                        <input type="text" id="input-fertilizer-mop-total">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="input-fertilizer-dap">ডি.এ.পি</label>
+                    </td>
+                    <td>
+                        <input type="text" id="input-fertilizer-dap">
+                    </td>
+                    <td>
+                        <input type="text" id="input-fertilizer-dap-total">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <button id="print">Print</button>
+    </div>
+
+    <div class="letter">
+        <div class="header-wrapper">
+            <div class="logo">
+
+                <svg class="hidden" id="eeHx8XcsgF01" height="150" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300"
+                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                    <ellipse rx="60.794045" ry="42.328371" transform="matrix(2.467346 0 0 1.947244 150 150)"
+                        fill="#008505" stroke-width="0" />
+                    <ellipse rx="51.282051" ry="24.813895"
+                        transform="matrix(2.709674 0 0 2.921663 150.000013 150.000003)" fill="rgba(255,255,255,0)"
+                        stroke="#fff" stroke-width="2" />
+                    <rect width="254.755997" height="33.085194" rx="0" ry="0"
+                        transform="matrix(.996527 0 0.188229 1.0675 20.086241 132.340778)" fill="#d2dbed"
+                        stroke-width="0" /><text dx="0" dy="0" font-family="&quot;eeHx8XcsgF01:::Noto Sans&quot;"
+                        font-size="15" font-weight="400" transform="translate(99.99577 159.756922)" stroke-width="0">
+                        <tspan y="0" font-family="&quot;eeHx8XcsgF01:::Noto Sans&quot;" font-size="25" font-weight="700"
+                            stroke-width="0">
+                            <![CDATA[
+                    SHOHEL
+                    ]]>
+                        </tspan>
+                        <tspan y="0" font-family="&quot;eeHx8XcsgF01:::Roboto&quot;" font-size="15" font-weight="400"
+                            stroke-width="0">
+                            <![CDATA[
+                     
+                    ]]>
+                        </tspan>
+                    </text>
+                    <style>
+                        <![CDATA[
+                        @font-face {
+                            font-family: 'eeHx8XcsgF01:::Noto Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-stretch: normal;
+                            src: url(data:font/ttf;charset=utf-8;base64,AAEAAAAQAQAABAAAR0RFRgASAAcAAAEsAAAAFkdQT1Mk3iupAAADVAAAAIJHU1VC7YsCYAAAAfwAAAA6T1MvMo40hl0AAAL0AAAAYFNUQVRd50M5AAAClAAAAF5jbWFwATUBGgAAAjgAAABcZ2FzcAAAABAAAAEUAAAACGdseWbxQ2JnAAAD2AAAAZRoZWFkJlm11gAAAcQAAAA2aGhlYQyzBX8AAAGgAAAAJGhtdHgPqwHxAAABRAAAABxsb2NhANoBWgAAARwAAAAQbWF4cAAsAaIAAAFgAAAAIG5hbWU1iWKRAAAFbAAAAnhwb3N0/58AMgAAAYAAAAAgcHJlcGgGjIUAAAEMAAAAB7gB/4WwBI0AAAEAAf//AA8AAAAUABQAKwBCAFEAhADKAAEAAAAMAAAAAAAAAAIAAQACAAYAAQAAAlgAXgEEAAACLABhAuUAYQIMAGEDDQA9AiUAMwABAAAABwERABgAjwAIAAEAAAAAAAAAAAAAAAAABAABAAMAAAAAAAD/nAAyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABC3+2wAACxj9k/uECvAAAQAAAAAAAAAAAAAAAAAAAAcAAQAAAAIDVACJailfDzz1AAMD6AAAAADdgNPnAAAAAOE9mxf9k/52CvAEKwAAAAYAAgAAAAAAAAABAAAACgA4ADgABURGTFQAJGN5cmwAIGRldjIAIGdyZWsAIGxhdG4AIAAAAAAABAAAAAD//wAAAAAAAAAAAAIAAAADAAAAFAADAAEAAAAUAAQASAAAAA4ACAACAAYAIABFAEgATABPAFP//wAAACAARQBIAEwATwBT////4f+9/7v/uP+2/7MAAQAAAAAAAAAAAAAAAAAAAAEAAQAIAAMAAAAUAAMAAAAsAAJ3Z2h0AQQAAHdkdGgBBQABaXRhbAETAAIAIgAWAAYAAwACAAIBFAAAAAAAAQAAAAEAAQACARIAZAAAAAMAAAACAAIBkAAAArwAAAAAAAQCQAGQAAUAAAKKAlgAAABLAooCWAAAAV4AMgFCAAACCwUCBAUEAgIE4AAC/0AAIB8IAAApABAAAEdPT0cAwAAgAFMELf7bAAAEZAGLAAABnwAAAAACGALKAAAAIAAFAAEAAAAKAC4APAACREZMVAAabGF0bgAOAAQAAAAA//8AAQAAAAQAAAAA//8AAAABa2VybgAIAAAAAQAAAAEABAACAAAAAQAIAAIAHAAEAAAALgAmAAMAAgAAAAAAAAAAAAD/7AABAAMAAgAEAAUAAQAFAAEAAQABAAIAAwABAAAAAgAAAAIAXgAAAfkCygADAAcAADMRIRElIREhXgGb/pgBNf7LAsr9NjMCZAABAGEAAAHwAsoACwAAISERIRUhFSEVIRUhAfD+cQGP/ssBI/7dATUCyk/fTv8AAQBhAAACgwLKAAsAACEjESERIxEzESERMwKDWv6SWloBbloBTf6zAsr+0gEuAAEAYQAAAfMCygAFAAAzETMRIRVhWgE4Asr9hlAAAAIAPf/2AtAC1QARACAAAAEUDgIjIi4CNTQ2NjMyFhYFFBYWMzI2NjU0JiMiBgYC0CpTe1FUfFIoSJNwa5JL/cwyaVBRZzJweVFpMgFmU4diNDVhiFNupFxbpW9agkZGglqHmUWBAAEAM//2AfYC1AAvAAAlFAYGIyImJic1FhYzMjY2NTQmJicuAzU0NjYzMhYXByYmIyIGBhUUFhYXHgIB9j5zTihJPBckazk1SCQeSUEuRS4XOmdDO2IoHCVXLy08Hh5EOj9XLb9AWTAIDwtWEBocNCMjMCkXEScyQCo5USwWEk0QFhovHyQwJhYXNUoAAAANAKIAAwABBAkAAAC2ASAAAwABBAkAAQASAQ4AAwABBAkAAgAOAQAAAwABBAkAAwA2AMoAAwABBAkABAAiAKgAAwABBAkABQAaAI4AAwABBAkABgAgAG4AAwABBAkADgA2ADgAAwABBAkBBAAMACwAAwABBAkBBQAKACIAAwABBAkBEgAMABYAAwABBAkBEwAMAAoAAwABBAkBFAAKAAAAUgBvAG0AYQBuAEkAdABhAGwAaQBjAE4AbwByAG0AYQBsAFcAaQBkAHQAaABXAGUAaQBnAGgAdABoAHQAdABwAHMAOgAvAC8AcwBjAHIAaQBwAHQAcwAuAHMAaQBsAC4AbwByAGcALwBPAEYATABOAG8AdABvAFMAYQBuAHMALQBSAGUAZwB1AGwAYQByAFYAZQByAHMAaQBvAG4AIAAyAC4AMAAxADMATgBvAHQAbwAgAFMAYQBuAHMAIABSAGUAZwB1AGwAYQByADIALgAwADEAMwA7AEcATwBPAEcAOwBOAG8AdABvAFMAYQBuAHMALQBSAGUAZwB1AGwAYQByAFIAZQBnAHUAbABhAHIATgBvAHQAbwAgAFMAYQBuAHMAQwBvAHAAeQByAGkAZwBoAHQAIAAyADAAMgAyACAAVABoAGUAIABOAG8AdABvACAAUAByAG8AagBlAGMAdAAgAEEAdQB0AGgAbwByAHMAIAAoAGgAdAB0AHAAcwA6AC8ALwBnAGkAdABoAHUAYgAuAGMAbwBtAC8AbgBvAHQAbwBmAG8AbgB0AHMALwBsAGEAdABpAG4ALQBnAHIAZQBlAGsALQBjAHkAcgBpAGwAbABpAGMAKQ==) format('truetype');
+                        }
+
+                        @font-face {
+                            font-family: 'eeHx8XcsgF01:::Noto Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-stretch: normal;
+                            src: url(data:font/ttf;charset=utf-8;base64,AAEAAAAQAQAABAAAR0RFRgASAAcAAAEsAAAAFkdQT1Mk3iupAAADUAAAAIJHU1VC7YsCYAAAAfwAAAA6T1MvMo9mhm8AAALwAAAAYFNUQVRe8UGlAAACOAAAAFpjbWFwATUBGgAAApQAAABcZ2FzcAAAABAAAAEUAAAACGdseWZTb083AAAD1AAAAZJoZWFkJi+12AAAAcQAAAA2aGhlYQyIBQIAAAGgAAAAJGhtdHgQAQHUAAABRAAAABxsb2NhANgBVwAAARwAAAAQbWF4cAAsAaIAAAFgAAAAIG5hbWU0VGQsAAAFaAAAAmxwb3N0/58AMgAAAYAAAAAgcHJlcGgGjIUAAAEMAAAAB7gB/4WwBI0AAAEAAf//AA8AAAAUABQAKgBBAFAAgwDJAAEAAAAMAAAAAAAAAAIAAQACAAYAAQAAAlgAXgEEAAACMABaAv0AWgI1AFoDHAA6AicALgABAAAABwERABgAjwAIAAEAAAAAAAAAAAAAAAAABAABAAMAAAAAAAD/nAAyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABC3+2wAACxj9aPsHCvAAAQAAAAAAAAAAAAAAAAAAAAcAAQAAAAIDVDolka9fDzz1AAMD6AAAAADdgNPnAAAAAOE9mxf9aP52CvAELQABAAYAAgAAAAAAAAABAAAACgA4ADgABURGTFQAJGN5cmwAIGRldjIAIGdyZWsAIGxhdG4AIAAAAAAABAAAAAD//wAAAAAAAAABAAEACAADAAAAFAADAAAALAACd2dodAEEAAB3ZHRoAQUAAWl0YWwBEwACACIAFgAGAAMAAgACARQAAAAAAAEAAAABAAEAAgESAGQAAAABAAAAAAEMArwAAAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABABIAAAADgAIAAIABgAgAEUASABMAE8AU///AAAAIABFAEgATABPAFP////h/73/u/+4/7b/swABAAAAAAAAAAAAAAAAAAAABAJoArwABQAAAooCWAAAAEsCigJYAAABXgAyAUgAAAILBQIEBQQCAgTgAAL/QAAgHwgAACkAEAAAR09PRwCgACAAUwQt/tsAAARkAYsAAAGfAAAAAAIiAsoAAAAgAAUAAQAAAAoALgA8AAJERkxUABpsYXRuAA4ABAAAAAD//wABAAAABAAAAAD//wAAAAFrZXJuAAgAAAABAAAAAQAEAAIAAAABAAgAAgAcAAQAAAAuACYAAwACAAAAAAAAAAAAAP/sAAEAAwACAAQABQABAAUAAQABAAEAAgADAAEAAAACAAAAAgBeAAAB+QLKAAMABwAAMxEhESUhESFeAZv+mAE1/ssCyv02MwJkAAEAWgAAAfUCygALAAAhIREhFSEVMxUjFSEB9f5lAZv+/PLyAQQCynydfLgAAQBaAAACowLKAAsAACEjESERIxEzESERMwKjl/7ll5cBG5cBNP7MAsr+6AEYAAEAWgAAAhMCygAFAAAzETMRIRValwEiAsr9s30AAAIAOv/2AuIC1QARACAAAAEUDgIjIi4CNTQ2NjMyFhYFFBYWMzI2NjU0JiMiBgYC4ilTgVdXgVMpSZd1dJZJ/fcmUD9BTyVUYEBQJgFmU4diNDVhiFNvpFtbpW9LbDo6bEtxgDpsAAEALv/2Af8C1AAvAAAlFAYGIyImJic1FhYzMjY2NTQmJicuAzU0NjYzMhYXByYmIyIGBhUUFhYXHgIB/z51VCVHQR0zbTYlLRUlPigZOjUiO21KOGU3MTFOKRwoFR48LTdNKsY/XjMKEw6NFiUUIhYbJiETDCExRjFAWzAaGHYUFhIgFhkjIBYaOEwAAAAAAA4ArgADAAEECQAAALYBCAADAAEECQABABIA9gADAAEECQACAAgA7gADAAEECQADADAAvgADAAEECQAEABwAogADAAEECQAFABoAiAADAAEECQAGABoAbgADAAEECQAOADYAOAADAAEECQEEAAwALAADAAEECQEFAAoAIgADAAEECQEMAAgA7gADAAEECQESAAwAFgADAAEECQETAAwACgADAAEECQEUAAoAAABSAG8AbQBhAG4ASQB0AGEAbABpAGMATgBvAHIAbQBhAGwAVwBpAGQAdABoAFcAZQBpAGcAaAB0AGgAdAB0AHAAcwA6AC8ALwBzAGMAcgBpAHAAdABzAC4AcwBpAGwALgBvAHIAZwAvAE8ARgBMAE4AbwB0AG8AUwBhAG4AcwAtAEIAbwBsAGQAVgBlAHIAcwBpAG8AbgAgADIALgAwADEAMwBOAG8AdABvACAAUwBhAG4AcwAgAEIAbwBsAGQAMgAuADAAMQAzADsARwBPAE8ARwA7AE4AbwB0AG8AUwBhAG4AcwAtAEIAbwBsAGQAQgBvAGwAZABOAG8AdABvACAAUwBhAG4AcwBDAG8AcAB5AHIAaQBnAGgAdAAgADIAMAAyADIAIABUAGgAZQAgAE4AbwB0AG8AIABQAHIAbwBqAGUAYwB0ACAAQQB1AHQAaABvAHIAcwAgACgAaAB0AHQAcABzADoALwAvAGcAaQB0AGgAdQBiAC4AYwBvAG0ALwBuAG8AdABvAGYAbwBuAHQAcwAvAGwAYQB0AGkAbgAtAGcAcgBlAGUAawAtAGMAeQByAGkAbABsAGkAYwAp) format('truetype');
+                        }
+
+                        @font-face {
+                            font-family: 'eeHx8XcsgF01:::Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url(data:font/ttf;charset=utf-8;base64,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) format('truetype');
+                        }
+                        ]]>
+                    </style>
+                </svg>
+
+
+            </div>
+            <div class="header">
+                <div class="wrapper-name-ben">মেসার্স <span class="name-ben">মো: নজরুল ইসলাম</span></div>
+                <div class="wrapper-name-eng">M/S <span class="name-eng">Md. Nazrul Islam</span></div>
+                <div class="wrapper-authority"><i>
+                        <div><span class="authority">বি, সি, আই, সি</span> অনুমোদিত সার ডিলার</div>
+                        <div>দর্শনা পুরাতন বাজার</div>
+                        <div>দর্শনা, চুয়াডাঙ্গা।</div>
+                        <div>মোবাইল: <b>০১৭১১-৩৮৫১৫০</b></div>
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <div class="head-date">
+            তারিখ: <b><i><span class="date-of-letter"></i></b></span> ইং
+        </div>
+
+        <div class="to">
+            <div>বারাবর,</div>
+            <div>উপজেলা কৃষি অফিসার</div>
+            <div>দামুড়হুদা, চুয়াডাঙ্গা।</div>
+        </div>
+
+        <div class="subject">
+            <b>বিষয়:
+                <u><span class="from">[--]</span> হতে <span class="fertilizer-list fertilizer-list-subject">^</span>
+                    সারের এ্যারাইভাল রিপোর্ট।</u></b>
+        </div>
+
+        <div class="greeting">জনাব, </div>
+        <div class="letter-text">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            যথাবিহিত সম্মান প্রদর্শন পূর্বক বিনীত নিবেদন এই যে, <span class="from">[--]</span> হতে <i><span
+                    class="allocation-month-year">[--]</span></i> মাসের <span class="alloctype">[--]</span> <span
+                class="fertilizer-list fertilizer-list-body">^</span> <i><span
+                    class="arrival-date date-of-letter"></span></i> ইং তারিখে নিজ গুদামে আসিয়াছে।</div>
+
+        <div class="request">
+            অনুগ্রহ পূর্বক উক্ত সার তদন্ত পূর্বক বিক্রয়ের অনুমতি দিতে সদয় মর্জি হয়।
+        </div>
+
+        <div class="letter-end">
+            <div class="letter-end-addressing">বিনীত,</div>
+            <div class="name-ben-wrapper">মেসার্স <span class="name-ben">মো: নজরুল ইসলাম</span></div>
+            <div class="pro-name-ben-wrapper">প্রো: <span class="pro-name-ben">মো: মাসুদ রানা</span></div>
+            <div><span class="authority">বি, সি, আই, সি</span> অনুমোদিত সার ডিলার</div>
+            <div>পুরাতন বাজার, দর্শনা</div>
+            <div>দামুড়হুদা, চুয়াডাঙ্গা।</div>
+        </div>
+
+        <div class="caution">
+            <div>সদয় অবগতি ও প্রয়োজনীয় ব্যবস্থা গ্রহনের জন্য পেশ করা হলো।</div>
+            <div>১) উপজেলা নির্বাহী অফিসার, দামুড়হুদা, চুয়াডাঙ্গা।</div>
+        </div>
+    </div>
+</body>
+
+</html>
